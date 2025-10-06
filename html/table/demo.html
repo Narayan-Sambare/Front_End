@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+    h2 {
+        background-color: #f4b21a;
+        padding: 10px;
+        color: black;
+        text-align: left;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+    }
+    td {
+        padding: 8px;
+        vertical-align: top;
+    }
+    .section-title {
+        background-color: #f4b21a;
+        padding: 5px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="date"], input[type="email"], input[type="number"] {
+        width: 90%;
+        padding: 4px;
+    }
+    .small-input {
+        width: auto;
+    }
+    .signature {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h2>REGISTRATION FORM</h2>
+
+<form>
+    <table border="0">
+        <tr>
+            <td>Date:</td>
+            <td><input type="date" name="date"></td>
+            <td>No:</td>
+            <td><input type="text" name="no"></td>
+        </tr>
+    </table>
+
+    <table border="0">
+        <tr>
+            <td>Dear Sir,<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+            <td>
+                Membership Type:<br>
+                <input type="radio" name="member" value="Regular"> Regular
+                <input type="radio" name="member" value="Premium"> Premium
+                <input type="radio" name="member" value="VIP"> VIP
+            </td>
+        </tr>
+    </table>
+
+    <div class="section-title">Personal Information</div>
+    <table border="1">
+        <tr>
+            <td>Full Name:</td><td><input type="text" name="fullname"></td>
+            <td>Nationality:</td><td><input type="text" name="nationality"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </td>
+            <td>Date of Birth:</td><td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Father's Name:</td><td><input type="text" name="father"></td>
+            <td>Place of Birth:</td><td><input type="text" name="pob"></td>
+        </tr>
+        <tr>
+            <td>Mother's Name:</td><td><input type="text" name="mother"></td>
+            <td>TIN No:</td><td><input type="text" name="tin"></td>
+        </tr>
+        <tr>
+            <td>Marital Status:</td>
+            <td>
+                <input type="radio" name="status" value="Single"> Single
+                <input type="radio" name="status" value="Married"> Married
+            </td>
+            <td>NID No:</td><td><input type="text" name="nid"></td>
+        </tr>
+        <tr>
+            <td>Residential:</td>
+            <td>
+                <input type="radio" name="res" value="Resident"> Resident
+                <input type="radio" name="res" value="Non"> Non
+            </td>
+            <td>Passport No:</td><td><input type="text" name="passport"></td>
+        </tr>
+    </table>
+
+    <div class="section-title">Contact Information</div>
+    <table border="1">
+        <tr><td>Address:</td><td colspan="3"><input type="text" name="address"></td></tr>
+        <tr>
+            <td>City:</td><td><input type="text" name="city"></td>
+            <td>State:</td><td><input type="text" name="state"></td>
+        </tr>
+        <tr>
+            <td>Zip Code:</td><td><input type="text" name="zip"></td>
+            <td>Country:</td><td><input type="text" name="country"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td><td><input type="text" name="phone"></td>
+            <td>Email:</td><td><input type="email" name="email"></td>
+        </tr>
+    </table>
+
+    <div class="signature">
+        Signature: ___________________________
+    </div>
+</form>
+
+</body>
+</html>

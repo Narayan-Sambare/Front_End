@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.t1{
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+}
+
+.t1 td{
+    border: 1px solid lightgray;
+
+}
+.t2 td{
+    border: 1px solid lightcoral;
+}
