@@ -6,37 +6,47 @@
 
 .container{
     /* border: 2px solid rgb(255, 0, 0); */
-    /* padding: 20px; */
-    width: fit-content;
-    margin: auto;
-    margin-top: 55px;
-    margin-bottom:55px ;
+        width:50%;
+        margin: auto;   
 }
 .t1{
-    /* border: 2px solid black; */
-    /* padding: 20px; */
-       border-collapse: collapse;
+     /* border: 2px solid black; */
+        width: 100%;
+        padding: 10px;
+        margin: 8px;
+        border: 1px solid lightgray;
+        /* border-collapse: collapse; */
+        text-align: left;
 }
 
 td{
-    border: 1px solid lightgray;
-    padding: 8px 30px;
-
+    /* border: 1px solid lightgray; */
+    padding: 10px;
+    margin: 8px;
+    border-bottom: 1px solid rgb(219, 219, 214);
 }
+input[type="checkbox"] {
+        margin: 10px;
+      }
 .yellow
 {
     background: rgb(255, 187, 0);
+    padding: 15px;
 }
 .bg-gray{
     background: #f3f2f2;
 }
-.yellow-line{
-    background:  rgb(255, 187, 0);
-    color: rgb(255, 187, 0);
+.line-black
+{
+    background: #000;
+    padding: 5px;
+    margin: 5px;
 }
-.black-line{
-    background:  rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+.line-yellow
+{
+    background: rgb(255, 187, 0);
+    padding: 5px;
+    margin: 5px;
 }
 .nocss
 {
@@ -47,4 +57,9 @@ td{
 {
     text-align: center;
     font-size: 20px;
+}
+.lr{
+     border-left: 1px solid rgb(219, 219, 214);
+     border-right: 1px solid rgb(219, 219, 214);
+     border-bottom: none;
 }

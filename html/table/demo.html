@@ -1,133 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registration Form</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-    }
-    h2 {
-        background-color: #f4b21a;
-        padding: 10px;
-        color: black;
-        text-align: left;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 15px;
-    }
-    td {
-        padding: 8px;
-        vertical-align: top;
-    }
-    .section-title {
-        background-color: #f4b21a;
-        padding: 5px;
-        font-weight: bold;
-    }
-    input[type="text"], input[type="date"], input[type="email"], input[type="number"] {
-        width: 90%;
-        padding: 4px;
-    }
-    .small-input {
-        width: auto;
-    }
-    .signature {
-        margin-top: 20px;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<h2>REGISTRATION FORM</h2>
-
-<form>
-    <table border="0">
-        <tr>
-            <td>Date:</td>
-            <td><input type="date" name="date"></td>
-            <td>No:</td>
-            <td><input type="text" name="no"></td>
-        </tr>
-    </table>
-
-    <table border="0">
-        <tr>
-            <td>Dear Sir,<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-            <td>
-                Membership Type:<br>
-                <input type="radio" name="member" value="Regular"> Regular
-                <input type="radio" name="member" value="Premium"> Premium
-                <input type="radio" name="member" value="VIP"> VIP
+  <div class="box">
+    <div class="form data">
+      <h1><mark><b></b>REGISTRATION</b> FORM</mark></h3>
+        <table>
+          <tr>
+            <td class="label-right">
+              <label for="date">Date:</label>
             </td>
-        </tr>
-    </table>
-
-    <div class="section-title">Personal Information</div>
-    <table border="1">
-        <tr>
-            <td>Full Name:</td><td><input type="text" name="fullname"></td>
-            <td>Nationality:</td><td><input type="text" name="nationality"></td>
-        </tr>
-        <tr>
-            <td>Gender:</td>
-            <td>
-                <input type="radio" name="gender" value="Male"> Male
-                <input type="radio" name="gender" value="Female"> Female
+            <td class="label-right">
+              <label for="no">No:_</label>
             </td>
-            <td>Date of Birth:</td><td><input type="date" name="dob"></td>
-        </tr>
-        <tr>
-            <td>Father's Name:</td><td><input type="text" name="father"></td>
-            <td>Place of Birth:</td><td><input type="text" name="pob"></td>
-        </tr>
-        <tr>
-            <td>Mother's Name:</td><td><input type="text" name="mother"></td>
-            <td>TIN No:</td><td><input type="text" name="tin"></td>
-        </tr>
-        <tr>
-            <td>Marital Status:</td>
-            <td>
-                <input type="radio" name="status" value="Single"> Single
-                <input type="radio" name="status" value="Married"> Married
-            </td>
-            <td>NID No:</td><td><input type="text" name="nid"></td>
-        </tr>
-        <tr>
-            <td>Residential:</td>
-            <td>
-                <input type="radio" name="res" value="Resident"> Resident
-                <input type="radio" name="res" value="Non"> Non
-            </td>
-            <td>Passport No:</td><td><input type="text" name="passport"></td>
-        </tr>
-    </table>
+          </tr>
 
-    <div class="section-title">Contact Information</div>
-    <table border="1">
-        <tr><td>Address:</td><td colspan="3"><input type="text" name="address"></td></tr>
-        <tr>
-            <td>City:</td><td><input type="text" name="city"></td>
-            <td>State:</td><td><input type="text" name="state"></td>
-        </tr>
-        <tr>
-            <td>Zip Code:</td><td><input type="text" name="zip"></td>
-            <td>Country:</td><td><input type="text" name="country"></td>
-        </tr>
-        <tr>
-            <td>Phone:</td><td><input type="text" name="phone"></td>
-            <td>Email:</td><td><input type="email" name="email"></td>
-        </tr>
-    </table>
+          <tr>
+            <td>
+              <h4>Dear sir,</h4>
+              <h5>Lorem ipsum dolor sit amet, consector adipiscing elite,
+                sed do eiusmod tempor incididunt ut
+              </h5>
+            </td>
+          </tr>
 
-    <div class="signature">
-        Signature: ___________________________
+          <tr>
+            <td>
+              <h2><mark>Personal Information</mark></h2>
+            </td>
+          <tr>
+            <td class="label-right">
+              <label for="fname">Full Name:</label>
+              <input type="text" id="fname" name="fname" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-right">
+              <label for="gender">Select Gender</label>
+            </td>
+            <td>
+              <input type="radio" id="gender" name="gender" value="male" required />
+              <label>Male</label>
+
+              <input type="radio" id="gender" name="gender" value="female" required />
+              <label>Female</label>
+
+              <input type="radio" id="gender" name="gender" value="other" required />
+              <label>Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label-right">
+              <label for="far">Fathers Name:</label>
+              <input type="text" id="far" name="far" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="mom">Mothers Name:</label>
+              <input type="text" id="mom" name="mom" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="maried">Marital Status:</label>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="label-right">
+              <label for="res">Residential</label>
+            </td>
+            <td>
+              <input type="checkbox" id="res" name="Resident" value="Resident" />
+              <label>Resident</label>
+              <input type="checkbox" id="res" name="res" value="res" placeholder="" />
+              <label>Non</label>
+            </td>
+          </tr>
+          <td class="label-right">
+            <label for="pass">Passport No:</label>
+            <input type="number" id="pass" name="pass" placeholder="" autocomplete="off" required />
+          </td>
+          </tr>
+          </tr>
+
+          <tr>
+            <td>
+              <h2><mark>Contact Information</mark></h2>
+            </td>
+          <tr>
+            <td class="label-right">
+              <label for="add">Address:</label>
+              <input type="text" id="add" name="add" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="code">Zip Code:</label>
+              <input type="text" id="code" name="code" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="ph">Phone:</label>
+              <input type="ph" id="ph" name="ph" placeholder="" autocomplete="off" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-right">
+              <label for="sine">Signature:</label>
+            </td>
+          </tr>
+        </table>
     </div>
-</form>
+  </div>
 
 </body>
+
 </html>
