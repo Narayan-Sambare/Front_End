@@ -11,16 +11,8 @@ console.log("Hitesh")
 
 let name = "hitesh"
 let age = 18
-let salary = 1844454444444444444n
 let isLoggedIn = false
 let state;
-
-// name => String
-// age => Number
-// salary => BigInt
-// isLoggedIn => Boolean
-// state => Undefined
-
 
 // number => 2 to power 53
 // bigint
@@ -35,4 +27,3 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
-console.log(typeof salary); // bigint
