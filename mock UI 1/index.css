@@ -1,0 +1,239 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 80%;
+    min-height: 300px;
+    margin: auto;
+}
+.main .nav{
+    width: 100%;
+    height: 50px;
+    background: #f1f1f1;
+}
+.nav h1{
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.main .sec-div
+{
+    width: 100%;
+    height: 450px;
+    background-image: url(/person1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.sec-div .text1{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+}
+.sec-div .text2{
+    width: 50%;
+    font-size: 1vw;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.sec-div .text3{
+    width: 50%;
+    font-size: 1vw;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.text3 a{
+    text-decoration: none;
+    color: rgb(86, 245, 245);
+}
+.btn
+{
+    width: 110px;
+    height: 30px;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 40px;   
+}
+.btn1
+{
+    width: 110px;
+    height: 30px;
+    background: #a7a7a7;
+    border: rgb(37, 37, 37);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 40px;   
+}
+.third-div
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.div1{
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #222121;
+    color: white;
+}
+.div1 .title
+{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.div2{
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: space-evenly;
+    padding: 20px;
+    background:aquamarine;
+    color: white;
+}
+.div2 .title
+{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.div3{
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: space-evenly;
+    padding: 20px;
+    background:rgb(40, 250, 180);
+    color: white;
+}
+.div3 .title
+{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.about{
+    height: 250px;
+    padding: 50px;
+    line-height: 20px;
+    text-align: center;
+}
+.features{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background: rgb(119, 223, 255);
+}
+.features .pic{
+    width: 50%;  
+    background-image: url(./person.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+
+}
+.features .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.pic img{
+    width: 100%;
+    height: 300px;
+}
+.services
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.ser-main
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.ser-main-div
+{
+    width: 33%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ser-main-div .logo
+{
+    background: #05c5ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    
+}
+.sec-div1
+{
+    width: 100%;
+    height: 450px;
+    background-image: url(/person1.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.to{
+    width: 50%;
+    background: #ffffff;
+}
+.to1{
+    width: 50%;
+}
+
+.to .text1{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+}
+.to .text2{
+    width: 50%;
+    font-size: 1vw;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.to .text3{
+    width: 50%;
+    font-size: 1vw;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+}
