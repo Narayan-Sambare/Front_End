@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+#container{
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    /* border: 1px solid lightgray; */
+}
+#header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* border: 1px solid lightgray; */
+}
+.left{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+.left img{
+    width:26 ;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%;   
+    align-items: center;
+    text-align: center;
+}
+.right .right-div1{
+    display: flex;
+
+}
+.right .right-div1 .login{
+    background: #000000;
+    border-radius: 50px;
+    width: 20px;
+    height:20px;
+}
+.right-div1 p{
+    padding-left: 10px;
+}
+.btn1{
+    
+    border: 1px solid yellow;
+    height: 50%;
+    padding: 3px 15px;
+    background: #ff7f7f;
+    border-radius: 10px;
+}
+.right img{
+    width:80% ;
+    height: 50%;
+    border-radius: 5px;
+}
+.div1{
+    /* border: 1px solid lightgray; */
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    gap: 5px;
+       text-align: justify;
+       text-align: center;
+}
+.div1 .div1-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: inherit;
+    padding: 40px;
+}
+.div1-left h1{
+    font-size: 2.5em;
+}
+.div1-left p{
+    margin-bottom: 5px;
+}
+.div1 .div1-right{
+    width: 50%;
+    height: inherit;
+}
+.div1-right img{
+    width: 100%;
+    height: inherit;
+}
+
+
+
+.div2{
+    /* border: 1px solid lightgray; */
+    width: 100%;
+    min-height: 300px;
+    background: #a0aaca;
+}
+.div2 .div2-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid #000000 ; */
+}
+.div2-top h1{
+    font-size: 2em;
+    padding: 5px;
+}
+.div2-top p{
+    font-size: 1em;
+    padding: 5px;
+    width: 60%;
+    text-align: justify;
+}
+.div2-bottom{
+    /* border: 1px solid #000000 ; */
+    padding: 50px;
+    width: 100%;
+   min-height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+p{
+    text-align: justify;
+}
+.div2-bottom .bottom-1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.bottom-1 img{
+    width: 100%;
+    height: 30%;
+}
+.bottom-1 h1{
+    font-size: 1.5em;
+}
+.div3{
+    /* border: 1px solid lightgray; */
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+}
+.div3 .div3-left{
+    width: 40%;
+    height: 350px;
+}
+.div3-left img{
+    width: 100%;
+    height: 100%;
+}
+.div3 .div3-right{
+    width: 60%;
+    min-height: 200px;
+    padding: 50px 100px;
+    
+}
+.div3-right h1{
+    font-size: 2em;
+    padding: 5px;
+}
+.div3-right p{
+    padding: 5px;
+}
+.div4{
+    /* border: 1px solid lightgray; */
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .div4-left{
+        width: 30%;
+        padding: 40px;
+    }
+    .div4-left h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .div4-left p{
+        text-align: justify;
+        padding-top: 15px;
+    }
+      .div4-right{
+        background: #eaf3f0;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div4-right .div4-inner-1{
+        width: 200px;
+        margin: 15px;
+        padding: 25px;
+        height: inherit;
+        background: #3d3b3b;
+        color: white;
+    }
+    .div4-inner-1 h1{
+        text-spacing-trim: space-all;
+    }
+    .div4-inner-1 p{
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .div4-inner-1 .num{
+        margin-top: 20px;
+        color: #ff7f7f;
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    .btn-see{
+        margin-top: 60px;
+        background: #3d3b3b;
+        color: white;
+        border:1px solid white;
+        padding: 5px 20px;
+        border-radius: 20px;
+
+    }
+.btn{
+    
+    background: #535151;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    margin: auto;
+}
+
+@media only screen and (min-width:954px) {
+    
+}
