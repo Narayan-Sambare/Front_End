@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+      
+        .container{
+            width: 100%;
+            min-height:500px ;
+            display: grid;
+            /*grid-template-columns: auto auto auto auto;*/
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 200px 200px 100px 60px;
+
+            grid-template-areas: "div1 div1 div1 div1"
+                                    "div2 div2 div3 div3"
+                                    "div4 div4 div5 div5"
+                                    "div6 div7 div8 div9"
+                                    "div10 div10 div10 div10";
+
+
+        }
+        .div1{
+            
+            grid-area: div1;
+            background: #000;
+        }
+        .div2{
+            grid-area: div2;
+            background: rebeccapurple;
+        }
+        .div3{
+            grid-area: div3;
+            background: red;
+        }
+        .div4{
+            grid-area: div4;
+            background: #918b8b;
+        }
+        .div5{
+            grid-area: div5;
+            background: #ebbdbd;
+        }
+        .div6{
+            grid-area: div6;
+            background: #6b4141;
+        }
+        .div7{
+            grid-area: div7;
+            background: #d44e4e;
+        }
+        .div8{
+            grid-area: div8;
+            background: #b61313;
+        }
+        .div9{
+            grid-area: div9;
+            background: #4e1515;
+        }
+        .div10{
+            grid-area: div10;
+            background: #251414;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="div1 item">div1</div>
+
+    <div class="div2 item">div2</div>
+    <div class="div3 item">div3</div>
+
+    <div class="div4 item">div4</div>
+    <div class="div5 item">div5</div>
+
+    <div class="div6 item">div6</div>
+
+    <div class="div7 item">div7</div>
+    <div class="div8 item">div8</div>
+    <div class="div9 item">div9</div>
+    <div class="div10 item">div10</div>
+    </div>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Fixed</title>
+
+<style>
+.container{
+    width:100%;
+    min-height:500px;
+    display:grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px 200px 100px 60px;
+
+    grid-template-areas:
+    "div1 div1 div1 div1"
+    "div2 div2 div3 div3"
+    "div4 div4 div5 div5"
+    "div6 div7 div8 div9"
+    "div10 div10 div10 div10";
+}
+
+.div1{ grid-area:div1; background:black; }
+.div2{ grid-area:div2; background:rebeccapurple; }
+.div3{ grid-area:div3; background:red; }
+.div4{ grid-area:div4; background:#918b8b; }
+.div5{ grid-area:div5; background:#ebbdbd; }
+.div6{ grid-area:div6; background:#6b4141; }
+.div7{ grid-area:div7; background:#d44e4e; }
+.div8{ grid-area:div8; background:#b61313; }
+.div9{ grid-area:div9; background:#4e1515; }
+.div10{ grid-area:div10; background:#251414; }
+
+.item{
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="div1 item">div1</div>
+    <div class="div2 item">div2</div>
+    <div class="div3 item">div3</div>
+    <div class="div4 item">div4</div>
+    <div class="div5 item">div5</div>
+    <div class="div6 item">div6</div>
+    <div class="div7 item">div7</div>
+    <div class="div8 item">div8</div>
+    <div class="div9 item">div9</div>
+    <div class="div10 item">div10</div>
+</div>
+</body>
+</html> -->
