@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create heading inside div </title>
+  <script type="text/javascript">
+    function show(){
+      let myDiv= document.getElementById("d");
+      let myheading=document.createElement("h1");
+      myheading.innerHTML="I am heading created by JS";
+      myDiv.appendChild(myheading);
+    }
+  </script>
+</head>
+<body>
+ 
+  <input type='button' name='s' value='Click me ' 
+  style="width:400px;height:40px" onclick="show()"/>
+
+  <div id="d">
+
+ </div>
+  
+</body>
+</html>
