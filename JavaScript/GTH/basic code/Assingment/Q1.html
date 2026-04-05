@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+       function changeColor()
+       {
+            let para = document.getElementById("k");
+            let h2Text=document.getElementById("k2");
+            para.style.color="red";
+            h2Text.innerHTML="i am new text";
+            
+       }
+    </script>
+</head>
+<body>
+    <h1 id="k">1. Change Text on Button Click
+            Description: Change paragraph text when a button is clicked.
+                Practice: getElementById, innerText
+    </h1>
+    <h2 id="k2">i am old text</h2>
+    <button onclick="changeColor()">change color</button>
+</body>
+</html>

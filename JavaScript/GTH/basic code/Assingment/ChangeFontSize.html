@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let count=24;
+        function fontM()
+        {
+            let para= document.getElementById("para");
+            count--;
+            para.style.fontSize=count+"px";
+            
+        }
+        function FontP(){
+            let para= document.getElementById("para");
+            count++;
+            para.style.fontSize=count+"px";
+            
+        }
+    </script>
+</head>
+<body>
+    <p id="para">9.Change Font Size</p>
+    <button onclick="FontP()">font size + </button>
+    <button onclick="fontM()">font size - </button>
+</body>
+</html>

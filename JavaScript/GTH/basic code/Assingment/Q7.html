@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            padding: 5px;
+            width: 10%;
+            border: 1px solid lightgray;
+        }
+    </style>
+    <script>
+        function addList()
+        {
+            let list=document.getElementById("inputValue");
+            let value=list.value;
+            let parent=document.getElementById("list");
+
+            let li=document.createElement("li");
+            li.textContent=value;   
+
+            parent.appendChild(li);
+            list.value=""
+        }
+    </script>
+</head>
+<body>
+    <p>7. Add List Item 
+Description: Add items dynamically to a list. 
+</p>
+
+<h1>Add data in list</h1>
+<input type="text" value="" id="inputValue" placeholder="add list" onblur="addList()">
+<ol id="list">
+   
+</ol>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 500px;
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        
+        function removePara()
+        {
+            let para=document.getElementById("para");
+            para.style.display="none"
+        }
+        function addPara()
+        {
+            let para=document.getElementById("para");
+            para.style.display="block"
+        }
+
+    </script>
+</head>
+<body>
+    <p id="para">8. Remove Element 
+Description: Remove a paragraph on button click
+</p>
+
+
+<button id="remove" onclick="removePara()">Remove Para</button>
+<button id="add" onclick="addPara()">Add Para</button>
+</body>
+</html>

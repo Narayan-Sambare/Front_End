@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let counter=0;
+        function count(){
+            
+            let para=document.getElementById("para");
+            para.style.padding="5px";
+            para.style.border=1+"px solid red";
+            para.style.width=10+"%";
+
+            para.innerHTML=counter;
+            counter++;
+            
+        }
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p>6. Count Button Clicks</p>
+
+
+    <p id="para"></p>
+    <button id="btn" value="0" onclick="count()">Count</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showTest()
+        {
+            let f_text=document.getElementById("f-text").value;
+            let para = document.getElementById("para");
+            para.innerHTML=f_text;
+        }
+    </script>
+</head>
+<body>
+    <p>4. Input Value Display
+Description: Show input text in a paragraph.
+Practice: value
+</p>
+
+<input type="text" id="f-text" value="" onblur="showTest()">
+<p id="para">
+
+</p>
+</body>
+</html>

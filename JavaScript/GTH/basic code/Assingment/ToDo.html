@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            margin: auto;
+            width: 40%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 5%;
+            border: 2px solid black;
+            border-radius: 5px 20px;
+            padding: 50px;
+            box-shadow: 3px 3px 10px rgb(5, 0, 5);
+        }
+
+        .todo,
+        .container {
+            width: 100%;
+            display: flex;
+            gap: 5px;
+        }
+        
+        button:hover{
+            box-shadow: 1px 1px 2px black;
+        }
+        ol{
+            list-style: none;
+            border: 1px solid rgb(4, 0, 255);
+            width: 100%;
+            padding-left: 0;
+        }
+        ol li{
+            border: 1px solid rgb(78, 78, 69);
+            margin-top: 5px;
+            width: inherit;
+            padding: 5px 20px;
+        }
+       
+        input{
+            width: 80%;
+            padding: 5px 20px;
+            
+        }
+        button{
+            width: 20%;
+            
+        }        
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <input type="text" value="" placeholder="Enter task here. " id="taskInput">
+            <button id="addBtn">Add</button>
+        </div>
+        <div class="todo">
+            <ol id="taskList">
+
+            </ol>
+        </div>
+    </div>
+
+</body>
+    <script>
+        let input = document.getElementById('taskInput');
+        let addBtn = document.getElementById('addBtn');
+        let taskList = document.getElementById('taskList');
+
+        addBtn.addEventListener('click', () => {
+            let taskValue = input.value;
+            if (taskValue === "") return; 
+            
+            let li = document.createElement('li');
+            li.textContent = taskValue;
+
+            let deleteBtn = document.createElement('button');
+            deleteBtn.textContent = "Remove";
+
+            deleteBtn.addEventListener('click', () => {
+                li.remove();
+            });
+
+            li.appendChild(deleteBtn);
+            taskList.appendChild(li);
+            input.value = "";
+        });
+    </script>
+</html>
