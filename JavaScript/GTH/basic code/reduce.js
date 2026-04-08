@@ -1,4 +1,5 @@
 let arr=[5,10,15];
-let newarr=arr.filter((n)=> n >25);
+let sum=0;
+let newarr=arr.reduce((n,v)=> v+n);
 console.log(newarr);
 
