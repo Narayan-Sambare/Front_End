@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Or registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .active{
+            color:rgb(255, 112, 136);           
+        }
+        .main {
+            width: 40%;
+            min-height: 200px;
+            margin: auto;
+            background: #ebc1c1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .but {
+            margin-top: 2%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .per {
+            width: 100%;
+            min-height: 200px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        form {
+            border: 1px solid black;
+            background: #c5a8a8;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100%;
+            min-height: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover{
+            box-shadow: 3px 3px 3px rgb(185, 113, 125);
+        }
+        input {
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+
+        function reg(){
+            
+            let userName, password, name, dob, email, contact, button, par;
+
+            let regId=document.getElementById("regId");
+            let loginId=document.getElementById("loginId");
+            loginId.setAttribute("class","")
+            regId.setAttribute("class","active");
+        
+
+            par=document.getElementById("par");
+            par.innerHTML="";
+            form=document.createElement("form");
+
+            name=document.createElement("input");
+            name.setAttribute("type","text");
+            name.setAttribute("value","");
+            name.setAttribute("autocomplete", "off");
+            name.setAttribute("name","name");
+            name.setAttribute("placeholder","Enter Your full Name");
+
+            email=document.createElement("input");
+            email.setAttribute("type","email");
+            email.setAttribute("value","");
+            email.setAttribute("autocomplete", "off");
+            email.setAttribute("name","email");
+            email.setAttribute("placeholder","Enter Your Email");
+            
+            dob=document.createElement("input");
+            dob.setAttribute("type","date");
+            dob.setAttribute("value","");
+            dob.setAttribute("name","dob");
+
+            contact=document.createElement("input");
+            contact.setAttribute("type","number");
+            contact.setAttribute("autocomplete", "off");
+            contact.setAttribute("maxlength","10");
+            contact.setAttribute("value","");
+            contact.setAttribute("name","email");
+            contact.setAttribute("placeholder","Enter Your Contact Number");
+
+            userName = document.createElement("input");
+            userName.setAttribute("name", "userName");
+            userName.setAttribute("autocomplete", "off");
+            userName.setAttribute("placeholder", "Enter userName");
+            userName.setAttribute("type", "text");
+            userName.setAttribute("value", "");
+
+            password = document.createElement("input");
+            password.setAttribute("type", "password");
+            password.setAttribute("placeholder", "Enter Password");
+            password.setAttribute("name", "password");
+            password.setAttribute("value", "");
+
+            button = document.createElement("button");
+            button.setAttribute("type", "submit");
+            button.setAttribute("value", "Login");
+            button.innerHTML = "Login";
+
+            par.appendChild(form);
+            form.appendChild(name);
+            form.appendChild(email);
+            form.appendChild(dob);
+            form.appendChild(contact);
+            form.appendChild(userName);
+            form.appendChild(password);
+            form.appendChild(button);
+        }
+        
+        function login() {
+            let userName, password, button, par;
+            par = document.getElementById("par");
+            par.innerHTML = "";
+
+            let regId=document.getElementById("regId");
+            let loginId=document.getElementById("loginId");
+
+            regId.setAttribute("class","")
+            loginId.setAttribute("class","active");
+
+            let form = document.createElement("form");
+
+            form.setAttribute("method", "POST");
+            form.setAttribute("name", "frm");
+            form.setAttribute("action", "");
+
+            userName = document.createElement("input");
+            userName.setAttribute("name", "userName");
+            userName.setAttribute("autocomplete", "off");
+            userName.setAttribute("placeholder", "Enter userName");
+            userName.setAttribute("type", "text");
+            userName.setAttribute("value", "");
+
+            password = document.createElement("input");
+            password.setAttribute("type", "password");
+            password.setAttribute("placeholder", "Enter Password");
+            password.setAttribute("name", "password");
+            password.setAttribute("value", "");
+
+            button = document.createElement("button");
+            button.setAttribute("type", "submit");
+            button.setAttribute("value", "Login");
+            button.innerHTML = "Login"
+
+            par.appendChild(form);
+            form.appendChild(userName);
+            form.appendChild(password);
+            form.appendChild(button);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="but">
+            <button onclick="reg()" id="regId">registration Form</button>
+            <button onclick="login()" id="loginId">Login Form</button>
+        </div>
+        <div id="par">
+        </div>
+
+    </div>
+</body>
+
+</html>
