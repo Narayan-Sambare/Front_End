@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest calculator</title>
+    <style>
+        .main{
+            margin: auto;
+            width: 30%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding-top: 10%;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+    <script>
+        let rate,time,am;
+        function Rate()
+        {
+            rate =document.getElementById("rate").value;
+        }
+        function timePerAnm()
+        {
+            time =document.getElementById("time").value;
+        }
+        function amount()
+        {
+            am =document.getElementById("amount").value;
+            document.getElementById("res").value=(Number(am)*Number(rate)*Number(time))/100;
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <h1>Simple Interest calculator</h1>
+        <input type="text" value="" id="res" readonly>
+        <input type="text" onkeyup="Rate()" value="" id="rate" placeholder="Rate">
+        <input type="text" onkeyup="timePerAnm()" value="" id="time" placeholder="Time">
+        <input type="text" onkeyup="amount()" value="" id="amount" placeholder="Amount">
+    </div>
+</body>
+</html>

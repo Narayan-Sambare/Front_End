@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <style>
+        .main{
+            padding-top: 10%;
+            width: 20%;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        input{
+            padding: 5px;
+        }
+               
+    </style>
+    <script>
+        function add(){
+            let f=document.getElementById("f").value;
+            let s=document.getElementById("s").value;
+            let res=document.getElementById("res");
+            res.value=parseFloat(f)+parseFloat(s); 
+        }
+        function cl(){
+            document.getElementById("f").value="";
+            document.getElementById("s").value="";
+            let res=document.getElementById("res");
+            res.value="";
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+    <input type="text" name="" id="res" value="" >
+    <input type="number" name="" id="f" value="" placeholder="First value" autocomplete="off">
+    <input type="number" name="" id="s" value="" placeholder="Secont value" autocomplete="off" >
+    <button id="add" onclick="add()">Add</button>
+    <button id="clear" onclick="cl()">clear</button>
+    </div>
+</body>
+</html>
