@@ -6,10 +6,10 @@ const students = [
 ];
 const names = students.map(s => s.name);
 console.log(names);
-
 const studentsWithGrade = students.map(s => ({
     name: s.name,
     score: s.score,
     grade: s.score >= 90 ? 'A' : s.score >= 80 ? 'B' : s.score >= 70 ? 'C' : 'D'
 }));
+
 console.log(studentsWithGrade);
